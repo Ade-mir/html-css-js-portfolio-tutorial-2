@@ -15,6 +15,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.background-image {
+  background-image: url("./assets/quadvjti.png"); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh; /* Adjust to your preferred height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Adjust text color for better visibility on the background */
+}
+
 p {
   color: rgb(85, 85, 85);
 }
@@ -37,6 +50,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  width: 100%;
+  padding: 10;
+  box-sizing: content-box;
 }
 
 .nav-links {
@@ -56,6 +72,51 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+}
+
+/* dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  /*padding: 14px 16px;*/
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 1.0rem;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .logo {
@@ -150,7 +211,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 80vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -285,6 +346,9 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  padding: 10px;
+  width: 450px;
 }
 
 .arrow {
@@ -294,7 +358,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -340,6 +404,8 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  /* height: 250px;
+  width: 250px; */
 }
 
 article {
