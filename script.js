@@ -7,7 +7,7 @@ function toggleMenu() {
 
 function autoScroll() {
   // Set the delay (in milliseconds) after which you want to scroll
-  var scrollDelay = 1750; // Adjust this value as needed (5000 milliseconds = 5 seconds)
+  var scrollDelay = 2000; // Adjust this value as needed (5000 milliseconds = 5 seconds)
 
   setTimeout(function() {
     // Calculate the new scroll position or use any logic you need

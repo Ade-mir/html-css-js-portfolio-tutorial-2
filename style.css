@@ -47,7 +47,7 @@ p {
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  /* text-shadow: 2px 2px 2px #000000; */
+  text-shadow: 2px 2px 2px #000000;
   animation: fadeIn 2s ease; /* Adjust animation duration and easing */
 }
 
