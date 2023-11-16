@@ -32,6 +32,33 @@ p {
   color: rgb(85, 85, 85);
 }
 
+.overlay {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.animated-text {
+  font-size: 125px;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  /* text-shadow: 2px 2px 2px #000000; */
+  animation: fadeIn 2s ease; /* Adjust animation duration and easing */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* TRANSITION */
 
 a,
@@ -365,6 +392,25 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.logos-container {
+  padding: 2rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  border-style: groove;
+  /* width: 150px; 
+  height: 300px;  */
+  transition: box-shadow 0.1s ease, transform 0.3s ease;
+}
+
+.logos-container:hover {
+  box-shadow: 0 0 20px black; /* Box shadow on hover */
+  transform: scale(1.01); /* Enlarge on hover */
 }
 
 .section-container {
