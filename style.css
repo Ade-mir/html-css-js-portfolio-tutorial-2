@@ -368,11 +368,12 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
+  gap: 150px;
   height: 80%;
 }
 
 .section__pic-container {
+  gap: 50px;
   height: 400px;
   width: 400px;
   margin: auto 0;
