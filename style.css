@@ -404,6 +404,8 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  background: black;
+  border-radius: 2rem;
   /* height: 250px;
   width: 250px; */
 }
