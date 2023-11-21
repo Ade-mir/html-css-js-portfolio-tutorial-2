@@ -361,6 +361,12 @@ section {
   margin-top: 2rem;
 }
 
+.aboutus-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;

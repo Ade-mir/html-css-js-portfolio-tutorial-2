@@ -25,5 +25,13 @@ function autoScroll() {
 // Call the autoScroll function when the page is loaded
 window.addEventListener('load', autoScroll);
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the container element
+  var container = document.getElementById('animatedContainer');
+
+  // Add a class to trigger the animation
+  container.classList.add('show');
+});
+
 
 
