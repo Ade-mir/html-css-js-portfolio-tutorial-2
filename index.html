@@ -9,17 +9,40 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+    <div class="background-image">
+      <div class="overlay">
+        <p class="animated-text">
+        Social Groups
+        </p>
+      </div>
+      <!-- Your website content goes here -->
+      <!-- <h1>Welcome to Your Website</h1>
+      <p>This is some content on your website.</p> -->
+    </div>
+    <nav id="nav">
+      <div class="logo">VJTI Social Groups</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">
+              <div class="dropdown">
+                <button class="dropbtn">Groups</a></button>
+                <div class="dropdown-content">
+                  <a href="#service1">Technovanza</a>
+                  <a href="#service2">Pratibimb</a>
+                  <a href="#service3">Enthusia</a>
+                  <a href="#service3">Rangawardhan</a>
+                  <a href="#service3">Digital VJTI</a>
+                  <a href="#service3">DLA</a>
+                  <a href="#service3">Swachh</a>
+                </div>
+              </div>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+  
     <nav id="hamburger-nav">
       <div class="logo">John Doe</div>
       <div class="hamburger-menu">
@@ -36,9 +59,10 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <hr>
+    <!-- <section id="profile. "> 
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/quad.jpg" alt="John Doe profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -70,21 +94,21 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <h1 class="title">About Us</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/mainbuilding.png"
             alt="Profile picture"
             class="about-pic"
+            height="390px"
           />
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
+        <div class="aboutus-details-container">
+          <div class="aboutus-containers">
+            <!-- <div class="details-container">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
@@ -92,37 +116,17 @@
               />
               <h3>Experience</h3>
               <p>2+ years <br />Frontend Development</p>
-            </div>
+            </div> -->
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+              <p>
+                Welcome to the dynamic world of the VJTI Social Group! We're an incredible conglomeration of 8 committees, fueling the energy of 6 national-level fests and a plethora of diverse events. It's a vibrant platform where you can unleash your talents and acquire invaluable skills across multiple domains. But there's more to us than just fun and festivities. Together with dedicated NGOs, we ignite change through impactful social and humanitarian activities. We believe in extending our helping hands with genuine empathy, going the extra mile to make a tangible difference in the lives of others.Whether you're passionate about event management, cultural activities, or social causes, the VJTI Social Group offers a diverse and inclusive space for everyone. Join us in creating memorable experiences, fostering personal development, and contributing to meaningful initiatives that go beyond the boundaries of our campus.
+              </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
+    <hr>
+    <!-- <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -249,101 +253,166 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+    </section> -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Social Groups</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="logos-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/technovanza.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Technovanza</h2>
             <div class="btn-container">
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
-              </button>
+              </button> -->
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Live Demo
+                Know more
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="logos-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/pratibimb.jpg"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Pratibimb</h2>
             <div class="btn-container">
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
-              </button>
+              </button> -->
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Live Demo
+                Know more
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="logos-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/enthusia.jpg"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Enthusia</h2>
             <div class="btn-container">
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
-              </button>
+              </button> -->
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Live Demo
+                Know more
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
+    <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="logos-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/rangawardhan.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Rangawardhan</h2>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Know more
+              </button>
+            </div>
+          </div>
+          <div class="logos-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/digital.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Digital</h2>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Know more
+              </button>
+            </div>
+          </div>
+          <div class="logos-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dla.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">DLA</h2>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Know more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <br>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -363,8 +432,8 @@
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
-    </section>
-    <footer>
+    </section> -->
+    <!-- <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
@@ -375,7 +444,30 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer> -->
+    <hr>
+    <footer>
+      <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section> 
     </footer>
     <script src="script.js"></script>
   </body>
