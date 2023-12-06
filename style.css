@@ -305,7 +305,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  /* height: 80%; */
 }
 
 .section__pic-container {
@@ -429,4 +429,22 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.circular-border {
+  /* Border properties */
+  /* border: 5px solid #000000; Change the color and size as needed */
+  
+  /* Making the image round */
+  border-radius: 50%;
+
+  /* Optional: If your image isn't already a square, this will ensure it becomes a circle */
+  /* width: 200px; /* Or any size */
+  /* height: 200px; */ 
+
+  /* Optional: to handle non-square images */
+  /* object-fit: cover; */
+
+  /* Optional: to ensure the border wraps the image tightly */
+  box-sizing: border-box;
 }
