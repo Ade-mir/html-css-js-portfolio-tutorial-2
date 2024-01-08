@@ -169,11 +169,26 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+.section__pic {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+/* Add these styles to your existing CSS file or create a new one */
+
+.section__pic {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  height: 400px; /* Adjust the height and width as needed */
+  width: 400px;
+  margin: auto; /* Center the circular image */
+}
+
+.section__pic img {
+  width: 100%; /* Ensure the image takes up the full container width */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .section__text {
@@ -285,6 +300,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  
 }
 
 .arrow {
@@ -308,7 +324,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
+.section__pic-container img {
   height: 400px;
   width: 400px;
   margin: auto 0;
