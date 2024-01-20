@@ -1,6 +1,6 @@
 var data = {
-    my_name: "M Nadeem Asghar",
-    designation: "Full Stack Developer",
+    my_name: "John Doe",
+    designation: "Frontend Developer",
     experience: "3+ years",
     education: "B.Sc. Bachelors Degree",
     projects: "12 completed projects",
