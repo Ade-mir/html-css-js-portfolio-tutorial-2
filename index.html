@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">M Nadeem Asghar</div>
+      <div class="logo my_name"></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">M Nadeem Asghar</div>
+      <div class="logo my_name"></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,36 +38,33 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic-removebg-preview.png" alt="M Nadeem Asghar profile picture" />
+        <img src="./assets/profile-pic-removebg-preview.png" alt="profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">M Nadeem Asghar</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
+        <h1 class="title my_name"></h1>
+        <p class="section__text__p2 designation"></p>
         <div class="btn-container">
-          <!-- <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button> -->
           <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/m-nadeem-asghar-82268478/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/mnadeemasghar'"
-          />
+          <a class="linkedin" href="">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+
+          <a class="github" href="">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -91,7 +88,7 @@
                 class="icon"
               /> -->
               <h3>Experience</h3>
-              <p>2+ years <br />Full Stack Development</p>
+              <p class="experience"></p>
             </div>
             <div class="details-container">
               <!-- <img
@@ -100,7 +97,7 @@
                 class="icon"
               /> -->
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree</p>
+              <p class="education"></p>
             </div>
           </div>
           <div class="about-containers">
@@ -111,7 +108,7 @@
                 class="icon"
               /> -->
               <h3>Projects</h3>
-              <p>12 completed projects</p>
+              <p class="projects"></p>
             </div>
             <div class="details-container">
               <!-- <img
@@ -120,7 +117,7 @@
                 class="icon"
               /> -->
               <h3>Clients</h3>
-              <p>3 active clients</p>
+              <p class="clients"></p>
             </div>
           </div>
         </div>
@@ -286,7 +283,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:m.nadeem.asghar@hotmail.com">m.nadeem.asghar@hotmail.com</a></p>
+          <p><a href="" class="email"></a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -312,5 +309,6 @@
       <p>Copyright &#169; 2024 M Nadeem Asghar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
