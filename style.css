@@ -34,7 +34,7 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 17vh;
 }
@@ -175,6 +175,12 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.profile-pic {
+  margin: auto auto;
+  width: 320px;
+  height: 320px;
+  align-items: right;
+}
 
 .section__text {
   align-self: center;
@@ -268,14 +274,21 @@ section {
 }
 
 .about-containers {
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .about-details-container {
+  margin: 0 auto;
+  width: 80%;
   justify-content: center;
   flex-direction: column;
+}
+.about-details-container .p {
+  width: 30%;
 }
 
 .about-containers,
@@ -295,17 +308,19 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  /* flex: 1; */
+
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width: 30%;
 }
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 60%;
 }
 
 .section__pic-container {
@@ -318,6 +333,12 @@ section {
 
 #experience {
   position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .experience-sub-title {
@@ -430,3 +451,31 @@ footer {
 footer p {
   text-align: center;
 }
+
+.experience {
+  text-align: left;
+}
+ .job-date {
+      font-weight: bold;
+      font-size: smaller;
+    }
+
+    .company {
+      color: rgb(85, 85, 85); 
+      font-size: 1.5em;
+      margin: 5px 0;
+    }
+    .role {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .description {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
