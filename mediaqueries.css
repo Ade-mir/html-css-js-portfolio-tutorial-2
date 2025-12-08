@@ -27,8 +27,15 @@
   .section-container {
     display: block;
   }
+  #profile {
+    position: relative;
+    padding-bottom: 4rem;
+  }
   .arrow {
     display: none;
+  }
+  .scroll-indicator {
+    bottom: 1rem;
   }
   section,
   .section-container {
@@ -44,6 +51,16 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }
 
@@ -99,5 +116,13 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .scroll-indicator span {
+    font-size: 0.75rem;
+  }
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
   }
 }
