@@ -7,22 +7,32 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.counter.dev/script.js" data-id="b67f574f-34c8-4c36-b042-64f2dc6bbb80" data-utcoffset="-8"></script>
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
+      <div class="logo">Luke Sarausad</div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#timeline">Timeline</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Luke Sarausad</div>
       <div class="hamburger-menu">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -31,25 +41,26 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#timeline" onclick="toggleMenu()">Timeline</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="fade-animate">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profileMain.png" alt="Luke Sarausad profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1">Welcome! I'm</p>
+        <h1 class="title">Luke Sarausad</h1>
+        <p class="section__text__p2"><span class="typing-text"></span></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Luke_Resume_September.pdf')"
           >
-            Download CV
+            Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -59,25 +70,30 @@
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            class="icon-arrow"
+            onclick="location.href='https://www.linkedin.com/in/lukesarausad/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
+            class="icon-arrow"
+            onclick="location.href='https://github.com/lukesarausad'"
           />
         </div>
       </div>
+      <div class="scroll-indicator" onclick="location.href='#about'">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
     </section>
-    <section id="about">
+
+    <section id="about" class="fade-animate">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/pic2.JPG"
             alt="Profile picture"
             class="about-pic"
           />
@@ -91,172 +107,233 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Software Engineering Internships and Projects</p>
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="./assets/Huskies.svg.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>University of Washington<br /> B.S. Computer Science<br />Minor in Business</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+              Hi! I'm Luke Sarausad, a Computer Science major with a Data Science focus at the University of Washington and a Business minor. I'm passionate about using technology and data to solve real-world problems.
+              Through my previous experiences and projects I have grasped a deeper understanding of fullstack development and working with industry standard technologies like AWS, React.js and more.
+This summer, I'll be a Software Engineer Intern at DoorDash in their San Francisco office. In my free time I enjoy working on projects and playing golf. Feel free to connect with me or contact me anytime! 
+              <!-- Fun fact, you are visitor number <span id="counter" style="color:darkorchid"></span> on my website! -->
+              
+            </div>
+            
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <i class="fa-solid fa-chevron-down icon-arrow arrow" onclick="location.href='./#experience'"></i>
     </section>
-    <section id="experience">
+    <section id="experience" class="fade-animate">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Languages</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/java.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>Java</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-js fa-3x icon" style="color: orange;" ></i>
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>Javascript</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-python fa-3x icon"></i>
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>Python</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-html5 fa-3x icon" style="color: red;"></i>
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>HTML/CSS</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/typescript.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/c.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>C</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Frameworks & Technologies</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-node-js fa-3x icon" style="color:green"></i>
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Node.js</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-react fa-3x icon" style="color:lightskyblue"></i>
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>React.js</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-leaf fa-2x icon" style="color:lightgreen"></i>
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>MongoDB</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-aws fa-2x icon" style="color:orange"></i>
+                <div>
+                  <h3>AWS</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-cloud fa-2x icon" style="color:peachpuff"></i>
+                <div>
+                  <h3>Azure</h3>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-github fa-2x icon"></i>
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <i class="fa-solid fa-chevron-down icon-arrow arrow" onclick="location.href='./#timeline'"></i>
     </section>
-    <section id="projects">
+
+    <section id="timeline" class="fade-animate">
+      <div class="timeline">
+        <div class="section__text">
+          <p class="section__text__p1">Take a look at</p>
+          <h1 class="title">My Journey</h1>
+        </div>
+        <br>
+        <br>
+
+        <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="timeline-date">2019-2023</div>
+                    <h3 class="timeline-title">Started Programming</h3>
+                    <p class="timeline-description">Explored programming through a series of courses offered at my high school and personal projects.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon uw-icon">
+                        <img src="./assets/uw-logo.png" alt="University of Washington" class="timeline-logo">
+                    </div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">University of Washington</h3>
+                    <p class="timeline-description">Studying Computer Science with a Data Science focus and Business minor at the University of Washington.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-date">2024</div>
+                    <h3 class="timeline-title">Projects & Development</h3>
+                    <p class="timeline-description">Built fullstack applications and personal projects to expand my portfolio in software development.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 - Amazon -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon uw-icon">
+                        <!-- <svg viewBox="0 0 100 50" class="timeline-logo-svg">
+                            <path d="M50 35 Q40 40, 30 35 L25 37 Q40 45, 50 45 Q60 45, 75 37 L70 35 Q60 40, 50 35 Z" fill="#FF9900"/>
+                            <text x="50" y="25" text-anchor="middle" fill="#000" font-size="18" font-weight="bold">Amazon</text>
+                        </svg> -->
+                        <img src="./assets/amazon-logo.png" alt="Amazon Logo" class="timeline-logo">
+                    </div>
+                    <div class="timeline-date">Previous Experience</div>
+                    <h3 class="timeline-title">Amazon</h3>
+                    <p class="timeline-description">Summer 2025 - SDE Intern in the Stores division</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 5 - DoorDash -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon uw-icon">
+                        <!-- <svg viewBox="0 0 100 50" class="timeline-logo-svg">
+                            <text x="50" y="32" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">DoorDash</text>
+                        </svg> -->
+                        <img src="./assets/doordash-logo.png" alt="DoorDash Logo" class="timeline-logo">
+                    </div>
+                    <div class="timeline-date">2026 Summer</div>
+                    <h3 class="timeline-title">DoorDash</h3>
+                    <p class="timeline-description">SWE Intern for the LaunchPad team. Working on building new product initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <i class="fa-solid fa-chevron-down icon-arrow arrow" onclick="location.href='./#projects'"></i>
+    </section>
+
+    <section id="projects" class="fade-animate">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -264,22 +341,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/project1.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">CourtFinder</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/bilal-ali1/Issaquah-Tennis-Queue'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://issaquah-tennis-queue.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -288,22 +365,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project2.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Summairy</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/lukesarausad/summairy'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/lukesarausad/summairy'"
               >
                 Live Demo
               </button>
@@ -312,22 +389,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/portfolio_graphic.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Market Predictor</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/lukesarausad/MarketPredictor'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/lukesarausad/MarketPredictor'"
               >
                 Live Demo
               </button>
@@ -335,14 +412,9 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <i class="fa-solid fa-chevron-down icon-arrow arrow" onclick="location.href='./#contact'"></i>
     </section>
-    <section id="contact">
+    <section id="contact" class="fade-animate">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -352,7 +424,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:lukes25@uw.edu">Email</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,8 +432,9 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/lukesarausad/">LinkedIn</a></p>
         </div>
+        <i class="fa-solid fa-arrow-up fa-2x icon-arrow arrow" onclick="location.href='./'"></i>
       </div>
     </section>
     <footer>
@@ -370,12 +443,13 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#timeline">Timeline</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Luke Sarausad. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
